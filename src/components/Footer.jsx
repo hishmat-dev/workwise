@@ -1,6 +1,6 @@
 import logo from '../components/assets/logo.png'
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
-
+// import googlePlay from '../../components/assets/googlePlay'
 function Footer() {
   const [ctaRef, isCTAVisible] = useIntersectionObserver({ threshold: 0.1 })
   const storeLinks = [
@@ -10,7 +10,7 @@ function Footer() {
     { name: "Mac", icon: "https://placehold.co/40x40?text=Mac" },
   ]
   return (
-    <footer className="py-12 bg-slate-900 text-slate-300">
+    <footer className="py-12 bg-waikawa-grey text-slate-300">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
@@ -35,7 +35,7 @@ function Footer() {
               </div>
             ))}
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
+          {/* <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
             <a href="#" className="text-blue-hosta hover:text-white transition-colors">
               About
             </a>
@@ -48,7 +48,7 @@ function Footer() {
             <a href="#" className="text-vivid-cerise hover:text-white transition-colors">
               Contact
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-8 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center">

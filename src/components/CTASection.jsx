@@ -21,8 +21,8 @@ function CTASection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold">Unlock The Power of Your Organization Now!</h2>
           <p className="text-lg text-white/80">
-            Start your free trial now and get the opportunity to get the insights for a better understanding of the work
-            itself. After the trial as low as ¥78 per user per month.
+            Register for a 14 day free trial and get the opportunity to get the maximum out of your teams while reducing the work load. After the trial as low as only 15$ per user per month.
+            Start Your Free Trial Now!
           </p>
 
           <div className="hover:scale-105 transition-transform duration-300">
