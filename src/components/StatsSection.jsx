@@ -40,7 +40,7 @@ function StatsSection() {
             "Most workers toggle between apps 10 times an hour which equates to 32 days lost in workplace productivity."
           </p>
           <cite className="mt-3 text-sm text-slate-500 text-center block">Published by Forbes.com</cite>
-          
+
         </div>
         <div className="flex flex-row md:flex-wrap justify-center gap-8">
           {stats.map((stat, index) => {
@@ -48,22 +48,24 @@ function StatsSection() {
             return (
               <div
                 key={index}
-                className={`bg-white rounded-xl p-6 text-center hover:shadow-lg hover:cursor-pointer transition-all duration-700 border border-slate-100 ${isStatsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+                className={`bg-white rounded-xl p-6 hover:shadow-lg hover:cursor-pointer transition-all duration-700 border border-slate-100 ${isStatsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div
-                  className={`w-16 h-16 mx-auto mb-4 rounded-full ${stat.color} flex items-center justify-center hover:scale-105 transition-transform duration-300`}
-                >
-                  <Icon className="h-8 w-8 text-white" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div
+                    className={`w-16 h-16 rounded-full ${stat.color} flex items-center justify-center hover:scale-105 transition-transform duration-300`}
+                  >
+                    <Icon className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900">{stat.title}</h3>
+                  <p className={`text-lg font-medium ${stat.textColor}`}>{stat.subtitle}</p>
                 </div>
-                <h3 className="text-4xl font-bold text-slate-900">{stat.title}</h3>
-                <p className={`text-lg font-medium ${stat.textColor}`}>{stat.subtitle}</p>
-                <p className="mt-2 text-slate-600">{stat.description}</p>
+                <p className="text-slate-600 text-center">{stat.description}</p>
               </div>
             )
           })}
         </div>
-        
+
 
       </div>
     </section>

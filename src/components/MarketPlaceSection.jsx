@@ -54,7 +54,7 @@ function MarketPlaceSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-waikawa-grey">Market Place</h2>
             <p className="text-lg text-slate-600">
               A digital platform established to connect buyers and seller around the world, allowing organisation to
-              trade goods and services with just a single click. WORKWISE is a market place designed to get the best
+              trade goods and services with just a single click. <strong>Workwise</strong> is a market place designed to get the best
               options in terms of services and goods, by eliminating the difficulty of establishing the trust between
               buyers and sellers simply by playing the mediator.
             </p>

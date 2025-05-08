@@ -64,7 +64,7 @@ function DifferenceSection() {
           <h3 className="text-2xl font-bold text-slate-900 mb-6">
             Making a company feel more connected, improving productivity and communication while making work fun.
           </h3>
-          <button className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-hosta to-vivid-cerise hover:from-vivid-cerise hover:to-blue-hosta text-white font-medium transition-all duration-200">
+          <button className="px-8 py-3 rounded-full  bg-gradient-to-r from-blue-hosta to-medium-turquoise hover:from-medium-turquoise hover:to-blue-hosta text-white font-medium transition-all hover:scale-105 duration-200">
             Get Started Today
           </button>
         </div>
