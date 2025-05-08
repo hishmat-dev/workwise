@@ -7,16 +7,16 @@ function CTASection() {
   return (
     <section
       ref={ctaRef}
-      className="py-20 bg-gradient-to-b from-white to-slate-100 overflow-hidden" 
+      className="py-20 bg-gradient-to-b from-white to-slate-100 overflow-hidden"
     >
       <div className="container px-4 md:px-6 mx-auto">
-        <div
-          className={`flex flex-col md:flex-row items-center justify-between gap-10 transition-all duration-700 ${
-            isCTAVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-        >
-         
-          <div className="md:w-1/2 text-center md:text-left space-y-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+  
+          <div
+            className={`md:w-1/2 text-center md:text-left space-y-6 transform transition-all duration-700 ease-out delay-400 ${
+              isCTAVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
+            }`}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-waikawa-grey">
               Unlock The Power of Your Organization Now!
             </h2>
@@ -25,14 +25,18 @@ function CTASection() {
               After the trial as low as only $15 per user per month. Start Your Free Trial Now!
             </p>
             <div className="hover:scale-105 transition-transform duration-300">
-              <button className="px-8 py-3  bg-gradient-to-r from-blue-hosta to-medium-turquoise hover:from-medium-turquoise hover:to-blue-hosta text-white rounded-full font-medium transition-colors duration-200">
+              <button className="px-8 py-3 bg-gradient-to-r from-blue-hosta to-medium-turquoise hover:from-medium-turquoise hover:to-blue-hosta text-white rounded-full font-medium transition-colors duration-200">
                 Start Your Free Trial Now
               </button>
             </div>
           </div>
 
-          
-          <div className="md:w-2/3 flex justify-center">
+      
+          <div
+            className={`md:w-2/3 flex justify-center transform transition-all duration-700 ease-out delay-50 ${
+              isCTAVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
+            }`}
+          >
             <img src={keyImage} alt="Key Visual" className="w-full max-w-2/3" />
           </div>
         </div>
