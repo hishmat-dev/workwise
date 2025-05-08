@@ -119,7 +119,7 @@ function LoginForm() {
               <a href="#" className="text-blue-hosta text-[16px] hover:text-vivid-cerise">
                 Register
               </a>
-              <a href="#" className="text-blue-hosta  hover:text-vivid-cerise">
+              <a href="#" className="text-blue-hosta text-[16px] hover:text-vivid-cerise">
                 Forgot Password?
               </a>
             </div>

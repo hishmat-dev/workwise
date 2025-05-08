@@ -27,7 +27,7 @@ function HeroSection() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-bright-sun blur-3xl opacity-20"></div>
       </div>
 
-      <div className="container px-4 md:px-6 flex flex-col lg:flex-row items-center justify-between gap-12 z-10">
+      <div className="container px-4 md:px-14 sm:space-y-3 flex flex-col lg:flex-row items-center justify-around z-10">
         <div
           className={`flex-1 space-y-8 text-center lg:text-left transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           style={{ transitionDelay: "100ms" }}
@@ -54,8 +54,13 @@ function HeroSection() {
               className={`max-w-[600px] mx-auto lg:mx-0 text-base text-slate-600 transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
               style={{ transitionDelay: "500ms" }}
             >
-              Work from home the way it should be: Easy • Effective • Efficient. Streamline your workflow and boost
-              productivity.
+              Work from home the way it should be
+            </p>
+            <p
+              className={`max-w-[600px] mx-auto lg:mx-0 text-base font-semibold text-slate-600 transition-all duration-700 ${isHeroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+              style={{ transitionDelay: "500ms" }}
+            >
+              Easy • Effective • Efficient
             </p>
           </div>
 

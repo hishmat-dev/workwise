@@ -37,12 +37,12 @@ function MarketPlaceSection() {
             style={{ transitionDelay: "200ms" }}
           >
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-bright-sun to-vivid-cerise rounded-2xl blur-xl opacity-30"></div>
-              <div className="relative rounded-xl overflow-hidden drop-shadow-[0_10px_25px_rgba(0,0,0,0.3)]">
+              <div className="absolute -inset-4 rounded-2xl blur-xl opacity-30"></div>
+              <div className="relative flex items-center justify-center rounded-xl overflow-hidden  drop-shadow-[0_10px_25px_rgba(0,0,0,0.3)]">
                 <img
                   src={marketPlace} 
                   alt="Market Place"
-                  className="w-full h-auto"
+                  className="w-2/3 h-auto"
                 />
               </div>
             </div>

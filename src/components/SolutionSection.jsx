@@ -57,25 +57,20 @@ function SolutionSection() {
           </div>
 
           <div
-            className={`flex-1 transition-all duration-700 ${isSolutionVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
-              }`}
+            className={`flex-1 transition-all duration-700 ${isSolutionVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
             style={{ transitionDelay: "200ms" }}
           >
-            <div className="relative">
-              
+            <div className="relative ">
               <div className="absolute -inset-4 rounded-2xl  blur-xl opacity-30"></div>
-
-        
-              <div className="relative rounded-xl overflow-hidden drop-shadow-[0_10px_25px_rgba(0,0,0,0.3)]">
+              <div className="relative flex items-center justify-center  rounded-xl overflow-hidden  drop-shadow-[0_10px_25px_rgba(0,0,0,0.3)]">
                 <img
                   src={solution}
                   alt="WORKWISE Dashboard"
-                  className="w-full h-auto"
+                  className="w-2/3 h-auto "
                 />
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
