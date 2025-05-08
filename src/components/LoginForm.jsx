@@ -110,8 +110,8 @@ function LoginForm() {
                 type="submit"
                 className="w-full h-12 bg-btn-color from-blue-hosta to-vivid-cerise hover:from-vivid-cerise hover:to-blue-hosta rounded-lg text-white font-medium flex items-center justify-center gap-2 transition-all duration-200"
               >
-                <LogIn className="h-5 w-5" />
                 Sign In
+                <LogIn className="h-5 w-5" />
               </button>
 
             </form>

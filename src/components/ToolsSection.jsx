@@ -49,7 +49,7 @@ function ToolsSection() {
         <div
           className={`text-center mb-16 transition-all duration-700 ${isToolsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Solution Tools</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-waikawa-grey">Solution Tools</h2>
           <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
             Everything you need to streamline your workflow and boost productivity in one integrated platform.
           </p>

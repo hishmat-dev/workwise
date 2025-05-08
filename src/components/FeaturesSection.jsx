@@ -42,7 +42,7 @@ function FeaturesSection() {
         <div
           className={`text-center mb-16 transition-all duration-700 ${isFeaturesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Key Features</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-waikawa-grey">Key Features</h2>
           <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
             Designed with your team's productivity and collaboration in mind
           </p>

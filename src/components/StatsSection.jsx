@@ -29,7 +29,7 @@ function StatsSection() {
         <div
           className={`text-center mb-12 transition-all duration-700 ${isStatsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-3xl font-bold text-slate-900">A corporate Social Solution</h2>
+          <h2 className="text-3xl font-bold text-waikawa-grey">A corporate Social Solution</h2>
 
           <p className="mt-4 text-lg text-slate-600 max-w-6xl mx-auto">
             Having everything in the same place, while enhancing operational efficiency, managing time more effectively, and bringing employees to a single system to access the right information at the right time.

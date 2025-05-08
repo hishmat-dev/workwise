@@ -51,7 +51,7 @@ function MarketPlaceSection() {
           <div
             className={`flex-1 space-y-6 transition-all duration-700 ${isMarketplaceVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 ">Market Place</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-waikawa-grey">Market Place</h2>
             <p className="text-lg text-slate-600">
               A digital platform established to connect buyers and seller around the world, allowing organisation to
               trade goods and services with just a single click. WORKWISE is a market place designed to get the best

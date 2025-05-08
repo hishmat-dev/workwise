@@ -37,7 +37,7 @@ function CustomerCentricSection() {
         <div
           className={`text-center mb-12 transition-all duration-700 ${isCustomerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Customer Centric Approach</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-waikawa-grey">Customer Centric Approach</h2>
           <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
             WORKWISE provides you tools and resources to build a more meaningful relationship with the customers of your
             business by so you can connect with them on a deeper level.
