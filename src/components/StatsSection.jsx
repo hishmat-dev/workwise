@@ -42,13 +42,13 @@ function StatsSection() {
           <cite className="mt-3 text-sm text-slate-500 text-center block">Published by Forbes.com</cite>
 
         </div>
-        <div className="flex flex-row md:flex-wrap justify-center gap-8">
+        <div className="flex flex-row flex-wrap md:flex-wrap justify-center gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon
             return (
               <div
                 key={index}
-                className={`bg-white rounded-xl p-6 hover:shadow-lg hover:cursor-pointer transition-all duration-700 border border-slate-100 ${isStatsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+                className={`bg-white rounded-xl p-6 hover:shadow-lg hover:cursor-pointer transition-all duration-700 border border-slate-300 ${isStatsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-center gap-4 mb-4">

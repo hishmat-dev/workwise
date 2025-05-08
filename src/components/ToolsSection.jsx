@@ -61,7 +61,7 @@ function ToolsSection() {
             return (
               <div
                 key={index}
-                className={`flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-100 hover:cursor-pointer shadow-sm transition-all duration-700 ${isToolsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                className={`flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-300 hover:cursor-pointer shadow-sm transition-all duration-700 ${isToolsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                   }`}
                 style={{ transitionDelay: `${index * 50}ms` }}
               >

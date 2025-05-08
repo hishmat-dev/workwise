@@ -48,7 +48,7 @@ function SolutionSection() {
             </ul>
 
             <div className="hover:scale-102 transition-transform duration-300">
-              <button className="mt-4 rounded-full bg-waikawa-grey hover:bg-vivid-cerise text-white px-6 py-3 inline-flex items-center font-medium transition-colors duration-200"
+              <button className="mt-4 rounded-full bg-gradient-to-r from-blue-hosta to-medium-turquoise hover:from-medium-turquoise hover:to-blue-hosta text-white px-6 py-3 inline-flex items-center font-medium transition-colors duration-200"
                 onClick={() => window.scrollTo({ top: document.getElementById("features-section").offsetTop, behavior: "smooth" })}
                 >
                 Explore Features <ArrowRight className="ml-2 h-4 w-4" />

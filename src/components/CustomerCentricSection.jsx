@@ -32,7 +32,7 @@ function CustomerCentricSection() {
   ]
 
   return (
-    <section ref={customerRef} className="py-20 bg-white overflow-hidden">
+    <section ref={customerRef} className="py-20 bg-gradient-to-b from-white to-slate-100 overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto">
         <div
           className={`text-center mb-12 transition-all duration-700 ${isCustomerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
@@ -50,7 +50,7 @@ function CustomerCentricSection() {
             return (
               <div
                 key={index}
-                className={`flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-100 hover:cursor-pointer shadow-sm transition-all duration-700 ${isCustomerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                className={`flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-300 hover:cursor-pointer shadow-sm transition-all duration-700 ${isCustomerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                   }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >

@@ -7,7 +7,7 @@ function CTASection() {
   return (
     <section
       ref={ctaRef}
-      className="py-20  text-white" // updated background to dark gray (customizable)
+      className="py-20 bg-gradient-to-b from-white to-slate-100 overflow-hidden" 
     >
       <div className="container px-4 md:px-6 mx-auto">
         <div
@@ -15,7 +15,7 @@ function CTASection() {
             isCTAVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          {/* Content */}
+         
           <div className="md:w-1/2 text-center md:text-left space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-waikawa-grey">
               Unlock The Power of Your Organization Now!
