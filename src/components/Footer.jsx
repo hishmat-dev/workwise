@@ -1,4 +1,4 @@
-import logo from '../components/assets/logo.png'
+import logo from '../components/assets/workwise_white.svg'
 import googlePlay from "../components/assets/googlePlay.png"
 import appStore from "../components/assets/appStore.png"
 import mac from "../components/assets/apple.png"
@@ -16,7 +16,8 @@ function Footer() {
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-6 md:mb-0">
-            <img src={logo} alt="WORKWISE Logo" className="h-20 w-auto" />
+            <img src={logo} alt="WORKWISE Logo" className="h-24 w-auto" />
+
             <p className="mt-2 text-sm text-slate-400">
               Work from anywhere the way it should be
               <br />
@@ -44,7 +45,7 @@ function Footer() {
 
           <div className="mt-4 md:mt-0 flex gap-4">
             <a href="https://www.workw.com/login" className="text-slate-400 hover:text-bright-sun transition-colors">
-              workwise.com
+            https://www.workw.com
             </a>
             <a href="#" className="text-slate-400 hover:text-bright-sun transition-colors">
               Terms

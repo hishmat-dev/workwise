@@ -25,10 +25,10 @@ function SolutionSection() {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-bright-sun/20 text-sm font-medium text-slate-800">
               <Check className="h-4 w-4 text-bright-sun" /> The Solution
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-waikawa-grey">One platform for all your needs</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-waikawa-grey">One Platform For All Your Needs</h2>
             <p className="text-lg text-slate-600">
               Centralize all services and strategies that a business can use to optimize its operations and increase
-              overall productivity. WORKWISE is a corporate social solution or simply put an Enterprise SaaS which hosts
+              overall productivity. <strong>Workwise</strong> is a corporate social solution or simply put an Enterprise SaaS which hosts
               a number of innovative modules.
             </p>
 

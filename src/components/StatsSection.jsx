@@ -24,22 +24,22 @@ function StatsSection() {
   ]
 
   return (
-    <section ref={statsRef} className="py-20 bg-white">
+    <section ref={statsRef} className="py-20 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto">
         <div
           className={`text-center mb-12 transition-all duration-700 ${isStatsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           {/* <h2 className="text-3xl font-bold text-waikawa-grey">The Problem We Solve</h2> */}
-          <h2 className="text-3xl font-bold text-waikawa-grey">A corporate Social Solution</h2>
+          <h2 className="text-3xl font-bold text-waikawa-grey">A Corporate Social Solution</h2>
 
           <p className="mt-4 text-lg text-slate-600 max-w-6xl mx-auto">
             Having everything in the same place, while enhancing operational efficiency, managing time more effectively, and bringing employees to a single system to access the right information at the right time.
           </p>
 
           <p className="mt-6 text-base text-slate-700 max-w-2xl mx-auto italic">
-            Most workers toggle between apps 10 times an hour which equates to 32 days lost in workplace productivity.
+            "Most workers toggle between apps 10 times an hour which equates to 32 days lost in workplace productivity."
           </p>
-
+          <cite className="mt-3 text-sm text-slate-500 text-center block">Published by Forbes.com</cite>
           
         </div>
         <div className="flex flex-row md:flex-wrap justify-center gap-8">
@@ -63,7 +63,7 @@ function StatsSection() {
             )
           })}
         </div>
-        <cite className="mt-8 text-sm text-slate-500 text-center block">Published by Forbes.com</cite>
+        
 
       </div>
     </section>

@@ -44,7 +44,7 @@ function ToolsSection() {
   ]
 
   return (
-    <section ref={toolsRef} className="py-20 bg-white">
+    <section ref={toolsRef} className="py-20 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto">
         <div
           className={`text-center mb-16 transition-all duration-700 ${isToolsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
@@ -61,17 +61,21 @@ function ToolsSection() {
             return (
               <div
                 key={index}
-                className={`bg-white rounded-xl p-6 hover:bg-gradient-to-br hover:from-white hover:to-slate-50 transition-all duration-700 hover:-translate-y-1 hover:shadow-lg border border-slate-100 ${isToolsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+                className={`flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-100 hover:cursor-pointer shadow-sm transition-all duration-700 ${isToolsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                  }`}
                 style={{ transitionDelay: `${index * 50}ms` }}
               >
                 <div
-                  className={`w-12 h-12 rounded-full bg-gradient-to-r ${tool.color} flex items-center justify-center mb-4`}
+                  className={`flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-r ${tool.color} flex items-center justify-center`}
                 >
-                  <Icon className="h-6 w-6 text-white" />
+                  <Icon className="h-5 w-5 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{tool.title}</h3>
-                <p className="text-slate-600">{tool.description}</p>
+                <div>
+                  <h3 className="font-bold text-slate-900">{tool.title}</h3>
+                  <p className="text-sm text-slate-600">{tool.description}</p>
+                </div>
               </div>
+
             )
           })}
         </div>
