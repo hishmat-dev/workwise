@@ -66,9 +66,9 @@ function HeroSection() {
             <button className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-gradient-to-r from-blue-hosta to-medium-turquoise hover:from-medium-turquoise hover:to-blue-hosta text-white font-medium transition-all duration-200">
               Get Started <ChevronRight className="ml-2 h-4 w-4" />
             </button>
-            <button className="inline-flex items-center justify-center px-8 py-3 rounded-full border border-waikawa-grey hover:border-vivid-cerise bg-white text-waikawa-grey hover:text-vivid-cerise font-medium transition-all duration-200">
+            {/* <button className="inline-flex items-center justify-center px-8 py-3 rounded-full border border-waikawa-grey hover:border-vivid-cerise bg-white text-waikawa-grey hover:text-vivid-cerise font-medium transition-all duration-200">
               Learn More
-            </button>
+            </button> */}
           </div>
         </div>
 

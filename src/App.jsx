@@ -20,8 +20,8 @@ function App() {
       <SolutionAvailabilitySection />
       <MarketPlaceSection />
       <CustomerCentricSection />
-      <DifferenceSection />
       <FeaturesSection />
+      <DifferenceSection />
       <CTASection />
       <Footer />
     </main>

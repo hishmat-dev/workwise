@@ -21,14 +21,6 @@ function StatsSection() {
       color: "bg-gradient-to-r from-medium-turquoise to-waikawa-grey",
       textColor: "text-medium-turquoise",
     },
-    {
-      icon: BarChart,
-      title: "68%",
-      subtitle: "Productivity boost",
-      description: "When using an integrated solution",
-      color: "bg-gradient-to-r from-waikawa-grey to-vivid-cerise",
-      textColor: "text-waikawa-grey",
-    },
   ]
 
   return (
@@ -37,20 +29,28 @@ function StatsSection() {
         <div
           className={`text-center mb-12 transition-all duration-700 ${isStatsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-3xl font-bold text-slate-900">The Problem We Solve</h2>
-          <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-slate-900">A corporate Social Solution</h2>
+
+          <p className="mt-4 text-lg text-slate-600 max-w-6xl mx-auto">
+            Having everything in the same place, while enhancing operational efficiency, managing time more effectively, and bringing employees to a single system to access the right information at the right time.
+          </p>
+
+          <p className="mt-6 text-base text-slate-700 max-w-2xl mx-auto italic">
             Most workers toggle between apps 10 times an hour which equates to 32 days lost in workplace productivity.
           </p>
-          <p className="mt-2 text-sm text-slate-500">Published by Forbes.com</p>
+
+          <cite className="mt-3 text-sm text-slate-500 block">Published by Forbes.com</cite>
+
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div className="flex flex-row md:flex-wrap justify-center gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon
             return (
               <div
                 key={index}
-                className={`bg-white rounded-xl p-6 text-center hover:shadow-lg transition-all duration-700 border border-slate-100 ${isStatsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+                className={`bg-white rounded-xl p-6 text-center hover:shadow-lg hover:cursor-pointer transition-all duration-700 border border-slate-100 ${isStatsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div

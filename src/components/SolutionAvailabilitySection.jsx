@@ -1,4 +1,5 @@
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
+import solAvail from '../Components/assets/solution_availiablity.svg';
 
 function SolutionAvailabilitySection() {
   const [availabilityRef, isAvailabilityVisible] = useIntersectionObserver({ threshold: 0.1 })
@@ -12,10 +13,10 @@ function SolutionAvailabilitySection() {
             style={{ transitionDelay: "200ms" }}
           >
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-medium-turquoise to-waikawa-grey rounded-2xl blur-xl opacity-30"></div>
-              <div className="relative bg-white rounded-xl shadow-xl overflow-hidden">
+              <div className="absolute -inset-4  blur-xl opacity-30"></div>
+              <div className="relative rounded-xl overflow-hidden drop-shadow-[0_10px_25px_rgba(0,0,0,0.3)]">
                 <img
-                  src="https://placehold.co/500x400?text=Access+Anywhere"
+                  src={solAvail}
                   alt="Access Anywhere"
                   className="w-full h-auto"
                 />

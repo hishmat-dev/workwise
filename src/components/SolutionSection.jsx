@@ -1,5 +1,6 @@
 import { Check, ArrowRight } from "lucide-react"
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
+import solution from "../components/assets/solution.png"
 
 function SolutionSection() {
   const [solutionRef, isSolutionVisible] = useIntersectionObserver({ threshold: 0.1 })
@@ -54,20 +55,25 @@ function SolutionSection() {
           </div>
 
           <div
-            className={`flex-1 transition-all duration-700 ${isSolutionVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
+            className={`flex-1 transition-all duration-700 ${isSolutionVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+              }`}
             style={{ transitionDelay: "200ms" }}
           >
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-hosta to-medium-turquoise rounded-2xl blur-xl opacity-30"></div>
-              <div className="relative bg-white rounded-xl shadow-xl overflow-hidden">
+              
+              <div className="absolute -inset-4 rounded-2xl  blur-xl opacity-30"></div>
+
+        
+              <div className="relative rounded-xl overflow-hidden drop-shadow-[0_10px_25px_rgba(0,0,0,0.3)]">
                 <img
-                  src="https://placehold.co/500x400?text=WORKWISE+Dashboard"
+                  src={solution}
                   alt="WORKWISE Dashboard"
                   className="w-full h-auto"
                 />
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

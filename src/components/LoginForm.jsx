@@ -68,83 +68,86 @@ function LoginForm() {
   ];
 
   return (
-    <div className="w-full">
-      <div className="w-full shadow-xl bg-white/90 backdrop-blur-sm border-0 rounded-xl">
-        <div className="space-y-1 text-center p-6">
-          <h2 className="text-2xl font-bold">Welcome</h2>
-          <p className="text-sm text-slate-500">Enter your login credentials to continue</p>
-        </div>
-        <div className="p-6">
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="relative">
-              <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" />
-              <input
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="h-12 rounded-lg w-full pl-10 pr-3 py-2 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-hosta focus:border-transparent"
-                required
-              />
-            </div>
-            <div className="relative">
-              <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" />
-              <input
-                type={showPassword ? "text" : "password"}
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="h-12 rounded-lg w-full pl-10 pr-10 py-2 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-hosta focus:border-transparent"
-                required
-              />
-              <button
-                type="button"
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
-                onClick={togglePasswordVisibility}
-              >
-                {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
-              </button>
-            </div>
-            <button
-              type="submit"
-              className="w-full h-12 bg-btn-color from-blue-hosta to-vivid-cerise hover:from-vivid-cerise hover:to-blue-hosta rounded-lg text-white font-medium flex items-center justify-center gap-2 transition-all duration-200"
-            >
-              <LogIn className="h-5 w-5" />
-              Sign In
-            </button>
-
-          </form>
-          <div className="mt-4 flex flex-row justify-between text-sm">
-            <a href="#" className="text-blue-hosta text-[16px] hover:text-vivid-cerise">
-              Register
-            </a>
-            <a href="#" className="text-blue-hosta text-[16px] hover:text-vivid-cerise">
-              Forgot Password?
-            </a>
+    <>
+      <div className="w-full">
+        <div className="w-full shadow-xl bg-white/90 backdrop-blur-sm border-0 rounded-xl">
+          <div className="space-y-1 text-center p-6">
+            <h2 className="text-2xl font-bold">Welcome</h2>
+            <p className="text-sm text-slate-500">Enter your login credentials to continue</p>
           </div>
-        </div>
-        <div className="p-6 flex flex-col">
-          <div className="grid grid-cols-4 gap-4">
-            {modules.map((mod, i) => (
-              <div
-                key={i}
-                className="flex items-center justify-center p-3  cursor-pointer hover:-translate-y-1 transition-transform duration-200 bg-white"
-                title={mod.name}
-              >
-                <img
-                  src={mod.icon}
-                  alt={mod.name}
-                  className="h-6 w-6 object-contain"
-                  width={24}
-                  height={24}
+          <div className="p-6">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="relative">
+                <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="h-12 rounded-lg w-full pl-10 pr-3 py-2 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-hosta focus:border-transparent"
+                  required
                 />
               </div>
-            ))}
-          </div>
+              <div className="relative">
+                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" />
+                <input
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="h-12 rounded-lg w-full pl-10 pr-10 py-2 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-hosta focus:border-transparent"
+                  required
+                />
+                <button
+                  type="button"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                  onClick={togglePasswordVisibility}
+                >
+                  {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
+                </button>
+              </div>
+              <button
+                type="submit"
+                className="w-full h-12 bg-btn-color from-blue-hosta to-vivid-cerise hover:from-vivid-cerise hover:to-blue-hosta rounded-lg text-white font-medium flex items-center justify-center gap-2 transition-all duration-200"
+              >
+                <LogIn className="h-5 w-5" />
+                Sign In
+              </button>
 
+            </form>
+            <div className="mt-4 flex flex-row justify-between text-sm">
+              <a href="#" className="text-blue-hosta text-[16px] hover:text-vivid-cerise">
+                Register
+              </a>
+              <a href="#" className="text-blue-hosta  hover:text-vivid-cerise">
+                Forgot Password?
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <div className="mt-6 p-4 flex flex-col shadow-xl bg-white/90 backdrop-blur-sm border-0 rounded-xl">
+        <div className="flex flex-row flex-wrap justify-center gap-2">
+          {modules.map((mod, i) => (
+            <div
+              key={i}
+              className="flex items-center justify-center p-2  cursor-pointer hover:-translate-y-1 transition-transform duration-200 bg-white"
+              title={mod.name}
+            >
+              <img
+                src={mod.icon}
+                alt={mod.name}
+                className="h-6 w-6 object-contain"
+                width={24}
+                height={24}
+              />
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </>
+
   )
 }
 

@@ -1,5 +1,6 @@
 import { ShoppingCart, Globe, Clock, Shield } from "lucide-react"
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
+import marketPlace from "../Components/assets/market_place.svg"
 
 function MarketPlaceSection() {
   const [marketplaceRef, isMarketplaceVisible] = useIntersectionObserver({ threshold: 0.1 })
@@ -37,9 +38,9 @@ function MarketPlaceSection() {
           >
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-bright-sun to-vivid-cerise rounded-2xl blur-xl opacity-30"></div>
-              <div className="relative bg-white rounded-xl shadow-xl overflow-hidden">
+              <div className="relative rounded-xl overflow-hidden drop-shadow-[0_10px_25px_rgba(0,0,0,0.3)]">
                 <img
-                  src="https://placehold.co/500x400?text=Market+Place"
+                  src={marketPlace} 
                   alt="Market Place"
                   className="w-full h-auto"
                 />
