@@ -26,7 +26,7 @@ function SolutionAvailabilitySection() {
           <div
             className={`flex-1 space-y-6 transition-all duration-700 ${isAvailabilityVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-waikawa-grey">Solution Availability</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 ">Solution Availability</h2>
             <p className="text-lg text-slate-600">
               Our solution has been crafted with the vision of easy access to everyone who has access to the internet
               and it is based on technology which enables secure, peer to peer communication without the need for

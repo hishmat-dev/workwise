@@ -5,11 +5,13 @@ function SolutionSection() {
   const [solutionRef, isSolutionVisible] = useIntersectionObserver({ threshold: 0.1 })
 
   const solutionFeatures = [
-    "Unified communication platform",
-    "Video conferencing and virtual meetings",
-    "Project management and task tracking",
+    "Unified communication platform with video conferencing and virtual meetings",
+    "Approval flow and process management",
+    "Finance and payroll automation",
     "HR management and employee engagement",
-    "Document sharing and collaboration",
+    "Project management and task tracking",
+    "Document creation, sharing, and collaboration",
+    "Lending and business credit solutions"
   ]
 
   return (

@@ -14,7 +14,7 @@ function ToolsSection() {
     {
       icon: Users,
       title: "HR Management",
-      description: "Including remote hiring, teams, bonus, designations, complaints, and more",
+      description: "Including remote hiring, leaves, loans, resignations, complains, rewards, appraisals and much more",
       color: "from-medium-turquoise to-waikawa-grey",
     },
     {
@@ -25,8 +25,8 @@ function ToolsSection() {
     },
     {
       icon: Globe,
-      title: "Market Place",
-      description: "Connect buyers and sellers across the world with a single click",
+      title: "Process/Approval Management",
+      description: "Expenses, Travel and much more",
       color: "from-vivid-cerise to-bright-sun",
     },
     {
@@ -38,7 +38,7 @@ function ToolsSection() {
     {
       icon: BarChart,
       title: "Finance Management",
-      description: "Expense tracking, financial reports, and making a budget",
+      description: "Payroll processing, lending solutions, profit & loss tracking, and comprehensive financial oversight",
       color: "from-blue-hosta to-vivid-cerise",
     },
   ]
@@ -49,9 +49,6 @@ function ToolsSection() {
         <div
           className={`text-center mb-16 transition-all duration-700 ${isToolsVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-vivid-cerise/20 text-sm font-medium text-vivid-cerise mb-4">
-            <Check className="h-4 w-4" /> Comprehensive Toolkit
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Solution Tools</h2>
           <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
             Everything you need to streamline your workflow and boost productivity in one integrated platform.

@@ -19,6 +19,7 @@ module.exports = {
         "waikawa-grey": "#526BB1",
         "vivid-cerise": "#DA1D81",
         "bright-sun": "#FED33C",
+        "btn-color":"#335b6d",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

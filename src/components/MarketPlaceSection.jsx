@@ -50,7 +50,7 @@ function MarketPlaceSection() {
           <div
             className={`flex-1 space-y-6 transition-all duration-700 ${isMarketplaceVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 text-vivid-cerise">Market Place</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 ">Market Place</h2>
             <p className="text-lg text-slate-600">
               A digital platform established to connect buyers and seller around the world, allowing organisation to
               trade goods and services with just a single click. WORKWISE is a market place designed to get the best
@@ -58,7 +58,7 @@ function MarketPlaceSection() {
               buyers and sellers simply by playing the mediator.
             </p>
             <p className="text-lg text-slate-600">
-              The rise of e-commerce has fuelled the of online market places which speed up the process and enhancing
+              The rise of e-commerce has fuelled the growth of online marketplaces which speed up the process and enhancing
               the overall experience of procurement.
             </p>
 
@@ -68,7 +68,7 @@ function MarketPlaceSection() {
                 return (
                   <div
                     key={index}
-                    className={`flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-100 shadow-sm transition-all duration-700 ${isMarketplaceVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+                    className={`flex items-start gap-3 p-4 bg-white rounded-lg border border-slate-100 hover:cursor-pointer shadow-sm transition-all duration-700 ${isMarketplaceVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                     style={{ transitionDelay: `${200 + index * 100}ms` }}
                   >
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-r from-bright-sun to-vivid-cerise flex items-center justify-center">

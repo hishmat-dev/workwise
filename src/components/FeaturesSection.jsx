@@ -1,4 +1,3 @@
-import { ChevronRight } from "lucide-react"
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver"
 
 function FeaturesSection() {
@@ -53,8 +52,8 @@ function FeaturesSection() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`relative rounded-xl border bg-white text-card-foreground shadow h-full overflow-hidden transition-all duration-700 ${isFeaturesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              className={`relative rounded-xl border bg-white text-card-foreground shadow h-full overflow-hidden transition-all hover:cursor-pointer hover:scale-105 duration-700 ${isFeaturesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+              style={{ transitionDelay: `${index * 50}ms` }}
             >
               <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${feature.gradient}`}></div>
               <div className="p-6">
