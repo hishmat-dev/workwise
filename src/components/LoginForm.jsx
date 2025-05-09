@@ -117,10 +117,10 @@ function LoginForm() {
 
             </form>
             <div className="mt-4 flex flex-row justify-between text-sm">
-              <a href="#" className="text-blue-hosta text-[16px] hover:text-vivid-cerise">
+              <a href="#" className="text-blue-hosta text-[16px] hover:text-btn-color">
                 Register
               </a>
-              <a href="#" className="text-blue-hosta text-[16px] hover:text-vivid-cerise">
+              <a href="#" className="text-blue-hosta text-[16px] hover:text-btn-color">
                 Forgot Password?
               </a>
             </div>

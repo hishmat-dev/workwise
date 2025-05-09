@@ -45,7 +45,7 @@ function Footer() {
 
           <div className="mt-4 md:mt-0 flex gap-4">
             <a href="https://www.workw.com/login" className="text-slate-400 hover:text-bright-sun transition-colors">
-            https://www.workw.com
+            www.workw.com
             </a>
             <a href="#" className="text-slate-400 hover:text-bright-sun transition-colors">
               Terms
